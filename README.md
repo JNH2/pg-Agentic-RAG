@@ -29,3 +29,33 @@ Traditional PostgreSQL optimization workflows remain heavily manual and operatio
    •   Optimization Ledger
 
 The system separates production workloads from AI-assisted optimization workflows through isolated staging namespaces and sandbox validation
+
+Techinical Report: In papers
+  This report focuses on:
+   Agentic PostgreSQL optimization
+   AI-assisted EXPLAIN analysis
+   RAG-driven DBA workflow
+   Optimization ledger systems
+   Sandbox validation architecture
+
+
+Current Status
+* System architecture design
+* Technical report draft
+* Kubernetes workflow planning
+* Prototype RAG agent
+* Automated EXPLAIN parser
+* Benchmark framework
+* Sandbox deployment validation
+
+Future Work
+Planned future directions include:
+* Quantitative benchmarking
+* AI-assisted query rewriting
+* Automated safety validation
+* Learned optimization policies
+* Evaluation against PostgreSQL tuning baselines
+
+
+Disclaimer
+This repository is an active research and infrastructure prototype. Components are experimental and not intended for direct production deployment without additional validation and security review.
