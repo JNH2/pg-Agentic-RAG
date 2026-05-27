@@ -1,61 +1,56 @@
-# Agentic-RAG-for-DB-Optimization-in-Computing-Infrastructure
+# A proposed Agentic RAG-Assisted PostgreSQL Optimization for Scientific Metadata Infrastructure
 
-for high-concurrency metadata systems in large-scale scientific environments such as High Energy Physics (HEP). The framework combines Retrieval-Augmented Generation (RAG), PostgreSQL observability, EXPLAIN plan analysis, and Kubernetes sandbox validation into a human-in-the-loop optimization pipeline.
+Research-oriented architecture exploration for AI-assisted PostgreSQL optimization in large-scale scientific computing environments.
 
-The project is currently developed as an open technical research initiative and infrastructure prototype
+---
 
-Motivation:
- metadata systems must support:
-   •   Petabyte-scale metadata retrieval
-   •   High-concurrency workloads
-   •   Long-lived detector condition tracking
-   •   Continuous optimization without schema disruption
+## Overview
 
-Traditional PostgreSQL optimization workflows remain heavily manual and operationally expensive. This project investigates whether Agentic AI systems can assist database administrators by combining:
-   •   EXPLAIN plan analysis
-   •   RAG-based knowledge retrieval
-   •   Optimization validation in staging environments
-   •   Rollback-aware deployment workflow
+This repository contains an ongoing research proposal and early-stage infrastructure exploration investigating how Retrieval-Augmented Generation (RAG), PostgreSQL observability, and sandbox-based validation workflows could support database administrators operating high-concurrency metadata systems.
 
-   Core Architecture
-   Main system components:
-   •   PostgreSQL + pg_stat_statements
-   •   Kubernetes / Minikube
-   •   PgBouncer
-   •   Prometheus + Grafana
-   •   LangChain orchestration
-   •   ChromaDB vector retrieval
-   •   Human-in-the-loop validation
-   •   Optimization Ledger
+The project is motivated by scientific computing environments such as High Energy Physics (HEP), where metadata infrastructures must continuously support:
 
-The system separates production workloads from AI-assisted optimization workflows through isolated staging namespaces and sandbox validation
+- Petabyte-scale metadata retrieval
+- High-concurrency workloads
+- Long-lived detector condition tracking
+- Non-disruptive optimization workflows
+- Reliable rollback-aware deployment procedures
 
-Techinical Report: In papers
-  This report focuses on:
-   Agentic PostgreSQL optimization
-   AI-assisted EXPLAIN analysis
-   RAG-driven DBA workflow
-   Optimization ledger systems
-   Sandbox validation architecture
+Rather than proposing fully autonomous database administration, this work explores a human-in-the-loop optimization workflow combining AI-assisted analysis with staged validation mechanisms.
 
+---
 
-Current Status
-* System architecture design
-* Technical report draft
-* Kubernetes workflow planning
-* Prototype RAG agent
-* Automated EXPLAIN parser
-* Benchmark framework
-* Sandbox deployment validation
+## Research Context
 
-Future Work
-Planned future directions include:
-* Quantitative benchmarking
-* AI-assisted query rewriting
-* Automated safety validation
-* Learned optimization policies
-* Evaluation against PostgreSQL tuning baselines
+Modern scientific metadata systems rely heavily on PostgreSQL-based infrastructures to maintain detector conditions, Interval of Validity (IOV) mappings, and Global Tags used across distributed computing environments.
 
+This repository investigates whether agentic AI systems could assist observability and optimization workflows by combining:
 
-Disclaimer
-This repository is an active research and infrastructure prototype. Components are experimental and not intended for direct production deployment without additional validation and security review.
+- PostgreSQL execution-plan analysis
+- Retrieval-Augmented Generation (RAG)
+- Query-performance observability
+- Kubernetes-based sandbox validation
+- Human-reviewed deployment workflows
+- Optimization traceability mechanisms
+
+The work is currently positioned as an infrastructure research study rather than a production-ready optimization platform.
+
+---
+
+## Proposed Architecture
+
+The proposed research architecture explores integration between:
+
+- PostgreSQL + pg_stat_statements
+- EXPLAIN (ANALYZE, BUFFERS)
+- Kubernetes / Minikube staging environments
+- PgBouncer connection pooling
+- Prometheus + Grafana observability
+- LangChain orchestration
+- ChromaDB vector retrieval
+- Human-in-the-loop validation
+- Optimization ledger mechanisms
+
+The architecture separates production workloads from AI-assisted experimentation through isolated sandbox namespaces and staged validation pipelines.
+
+---
